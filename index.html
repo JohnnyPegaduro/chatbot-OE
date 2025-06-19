@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Chatbot – Cambio de Contraseña</title>
+
+  <!-- —— Estilos rápidos —— -->
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f5f6fa;
+      margin:0;
+      padding:40px 0;
+      display:flex;
+      justify-content:center;
+    }
+    .wrapper{
+      width:400px;
+      background:#ffffff;
+      padding:20px 24px 32px;
+      border-radius:10px;
+      box-shadow:0 4px 12px rgba(0,0,0,.15);
+      text-align:center;
+    }
+    h1{
+      font-size:1.4rem;
+      margin-bottom:10px;
+    }
+    h2{
+      font-size:1rem;
+      margin:18px 0 6px;
+    }
+    ul{
+      text-align:left;
+      padding-left:18px;
+      margin:0 0 18px;
+    }
+    li{
+      margin-bottom:4px;
+    }
+    /* Ajusta alto si lo necesitas */
+    df-messenger{
+      width:100%;
+      min-height:430px;
+    }
+    footer{
+      margin-top:6px;
+      font-size:.8rem;
+      color:#666;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Asistente de Cambio de Contraseña</h1>
+
+    <h2>Preguntas sugeridas:</h2>
+    <ul>
+      <li>¿Cómo cambio mi contraseña?</li>
+      <li>No recibí el correo de verificación</li>
+      <li>¿Qué hago con el enlace?</li>
+      <li>Mi contraseña no cumple los requisitos</li>
+      <li>¿Cuánto tiempo vale el enlace?</li>
+      <li>¿Qué hago una vez que recibo el link?</li>
+    </ul>
+
+    <!-- Widget Dialogflow Messenger -->
+    <df-messenger
+        project-id="tu-project-id"
+        agent-id="a4dcef57-a229-421d-bc51-9ba2a33de676"
+        language-code="es"
+        chat-title="Asistente de Contraseña">
+    </df-messenger>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js"></script>
+
+    <footer>
+      Demo académica • Organización Empresarial
+    </footer>
+  </div>
+</body>
+</html>
+
+
